@@ -1,4 +1,4 @@
-package pro.dadadaa.dadadaa;
+package pro.dadadaa.dadadaa.Service;
 
 import org.springframework.stereotype.Service;
 
