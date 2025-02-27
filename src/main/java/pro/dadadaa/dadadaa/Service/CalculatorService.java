@@ -1,40 +1,15 @@
 package pro.dadadaa.dadadaa.Service;
 
-import org.springframework.stereotype.Service;
+public interface CalculatorService {
+    String helloCalculator();
 
-@Service
-public class CalculatorService {
-    public String hello() {
-        return "<h1>Добро пожаловать</h1>";
-    }
+    String plus(int num1, int num2);
 
-    public String helloCalculator() {
-        return "<h1>Добро пожаловать в калькулятор</h1>";
-    }
+    String minus(int num1, int num2);
 
-    public String plus(int firstNum, int secondNum) {
-        int total = firstNum + secondNum;
-        return firstNum + " + " + secondNum + " = " + total;
-    }
+    String multiply(int num1, int num2);
 
-    public String minus(int firstNum, int secondNum) {
-        int total = firstNum - secondNum;
-        return firstNum + " - " + secondNum + " = " + total;
-    }
+    String divide(int num1, int num2);
 
-    public String multiply(int firstNum, int secondNum) {
-        int total = firstNum * secondNum;
-        return firstNum + " * " + secondNum + " = " + total;
-    }
-
-    public String divide(int firstNum, int secondNum) {
-        if (secondNum != 0){
-            int total = firstNum / secondNum;
-            return firstNum + " / " + secondNum + " = " + total;
-        }
-        else {
-            return "<h1>На ноль делить нельзя</h1>";
-        }
-    }
 
 }
