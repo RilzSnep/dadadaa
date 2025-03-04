@@ -1,14 +1,14 @@
-package pro.dadadaa.dadadaa;
+package pro.springMockito.springMockito;
 
 public class Employee {
     private String name;
     private int salary;
-    private String department;
+    private int departmentId;
 
-    public Employee(String name, int salary, String department) {
+    public Employee(String name, int salary, int departmentId) {
         this.name = name;
         this.salary = salary;
-        this.department = department;
+        this.departmentId = departmentId;
     }
 
     public String getName() {
@@ -19,8 +19,8 @@ public class Employee {
         return salary;
     }
 
-    public String getDepartment() {
-        return department;
+    public int getDepartmentId() {
+        return departmentId;
     }
 
     @Override
@@ -28,7 +28,7 @@ public class Employee {
         return "Employee{" +
                 "name='" + name + '\'' +
                 ", salary=" + salary +
-                ", department='" + department + '\'' +
+                ", departmentId=" + departmentId +
                 '}';
     }
 }

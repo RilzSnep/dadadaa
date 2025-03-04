@@ -1,4 +1,4 @@
-package pro.dadadaa.dadadaa.exeption;
+package pro.springMockito.springMockito.exeption;
 
 
 public class DivisionByZeroException extends RuntimeException {
